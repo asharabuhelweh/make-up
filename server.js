@@ -108,7 +108,7 @@ function updateHandler(req,res){
 
 
 }
-function deleteHandler(res,req){
+function deleteHandler(req,res){
   let id = req.params.id;
 let sql = `DELETE FROM make WHERE id=$1;`;
 let safeValues=[id];
